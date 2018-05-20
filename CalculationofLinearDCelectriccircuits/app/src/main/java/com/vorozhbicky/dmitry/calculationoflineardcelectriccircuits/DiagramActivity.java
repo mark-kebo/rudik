@@ -170,8 +170,8 @@ public class DiagramActivity extends AppCompatActivity {
                                     "2.Строим в масштабе под углом к действительной оси +1 векторы фазных токов IAB,IBC,IAC:\n"+
                             "Вектор тока IAB="+String.format("%.2f",IAB1)+"IBC="+String.format("%.2f",IBC1)+"IAC="+
                             String.format("%.2f",IAC1)+"\n"+ "углы сдвига фаз соответственно:ψА="+
-                            String.format("%.2f",(Math.toDegrees(fIAB1)))+"ψВ="+String.format("%.2f",(Math.toDegrees(fIBC1)))+
-                                    "ψС="+String.format("%.2f",(Math.toDegrees(fIAC1)))+"\n"+
+                            String.format("%.2f",((fIAB1)))+"ψВ="+String.format("%.2f",((fIBC1)))+
+                                    "ψС="+String.format("%.2f",((fIAC1)))+"\n"+
                                     "3.К концам векторов IAB,IBC,IAC пристраииваются отрицательные фазные токи " +
                                     "согласно уравнениям в п.4\n"+ "4.Соединив концы отрицательных векторов с началом " +
                                     "координат получим линейные токи IA,IB,IC");
