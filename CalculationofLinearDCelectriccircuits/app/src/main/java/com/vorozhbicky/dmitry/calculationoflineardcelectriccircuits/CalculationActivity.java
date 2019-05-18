@@ -357,6 +357,13 @@ public class CalculationActivity extends AppCompatActivity {
         double SABR1=SAB1*Math.sin(Math.toRadians(fSAB1));
         double SBCR1= SBC1*Math.sin(Math.toRadians(fSBC1));
         double SACR1= SAC1*Math.sin(Math.toRadians(fSAC1));
+        //Вычисляем и присваиваем активную и реактивную составляющие значению полной мощности
+        double SPOLNA1 = SABA1 + SBCA1 + SACA1;
+        double SPOLNR1 = SABR1 + SBCR1 + SACR1;
+        //Вычисляем и присваиваем значение полной мощности переменной SPOLN
+        double SPOLN1 = Math.sqrt(Math.pow(SPOLNA1, exponent) + Math.pow(SPOLNR1, exponent));
+        //Вычисляем и присваиваем угол сдвига фазы мощности переменной φSPOLN
+        double fSPOLN1 = Math.atan(SPOLNR1 / SPOLNA1);
 
         //Вывод результатов на экран
         calculationTextView.setText("Расчет 'Треугольник':\n\n" +
@@ -400,7 +407,9 @@ public class CalculationActivity extends AppCompatActivity {
                 "SBC=UBC*IBC="+ul+"*e^j"+fUB+"° *"+String.format("%.2f",IBC1)+"*e^j* "+String.format("%.2f",fOIBC1)+"°="+String.format("%.2f",SBC1)+"*e^j* "+String.format("%.2f",fSBC1)+"° = ("+String.format("%.2f",SBCA1)+"+j*"+String.format("%.2f",SBCR1)+")B*A\n" +
                 "где SBC="+String.format("%.2f",SBC1)+"B*A PBC="+String.format("%.2f",SBCA1)+"Вт, QBC="+String.format("%.2f",SBCR1)+"вар\n" +
                 "SBC=UAC*IAC="+ul+"*e^j"+fUC+"° *"+String.format("%.2f",IAC1)+"*e^j* "+String.format("%.2f",fOIAC1)+"° ="+String.format("%.2f",SAC1)+"*e^j* "+String.format("%.2f",fSAC1)+"° = ("+String.format("%.2f",SACA1)+"+j*"+String.format("%.2f",SACR1)+"B*A\n" +
-                "где SAC="+String.format("%.2f",SAC1)+"B*A PAC="+String.format("%.2f",SACA1)+"Вт, QAC="+String.format("%.2f",SACR1)+"вар\n");
+                "где SAC="+String.format("%.2f",SAC1)+"B*A PAC="+String.format("%.2f",SACA1)+"Вт, QAC="+String.format("%.2f",SACR1)+"вар\n"+
+                "Sполн = SфАB+ SфBC+ SфAC=" + String.format("%.2f",SABA1) + "+" + String.format("%.2f",SBCA1) + "+" + String.format("%.2f",SACA1) + "+j*" + String.format("%.2f",SABR1) + "+j*" + String.format("%.2f",SBCR1) + "+j*" + String.format("%.2f",SACR1) + "=" + SPOLNA1 + "+j*" + SPOLNR1 + "=(" + SPOLN1 + "*e^j" + fSPOLN1 + "°) В*А\n" +
+                "где S=" + String.format("%.2f",SPOLN1) + "В*А, P=" + String.format("%.2f",SPOLNA1) + "Вт, Q=" + String.format("%.2f",SPOLNR1) + "Вар");;
 
 
 
