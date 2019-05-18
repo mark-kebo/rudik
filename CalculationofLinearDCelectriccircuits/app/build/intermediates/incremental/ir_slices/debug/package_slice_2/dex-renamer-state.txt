@@ -1,4 +1,4 @@
-#Sat May 18 22:31:28 MSK 2019
-base.0=/Users/dmitryvorozhbicki/Desktop/CalculationofLinearDCelectriccircuits/app/build/intermediates/transforms/dexMerger/debug/2
+#Sun May 19 00:11:23 MSK 2019
+base.0=/Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/build/intermediates/transforms/dexMerger/debug/2
 path.0=classes.dex
 renamed.0=classes.dex
