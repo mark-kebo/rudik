@@ -15,8 +15,9 @@ import android.widget.TextView;
 
 public class DiagramActivity extends AppCompatActivity {
     private TextView descriptions;
+    private TextView descriptionsTwo;
     private ImageView diagramContainer;
-    private Paint paint = new Paint();
+    private Canvas canvas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class DiagramActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         descriptions = findViewById(R.id.descriptionsTextView);
+        descriptionsTwo = findViewById(R.id.descriptionTwo);
         diagramContainer = findViewById(R.id.diagramContainer);
 
         drawCoordinate();
@@ -48,26 +50,36 @@ public class DiagramActivity extends AppCompatActivity {
         DisplayMetrics displaymetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
         int screenWidth = displaymetrics.widthPixels;
-        int screenHeight = displaymetrics.heightPixels;
-        diagramContainer.getLayoutParams().height = screenHeight / 2;
-        diagramContainer.getLayoutParams().width = screenWidth / 2;
+        int screenHeight = displaymetrics.heightPixels / 2;
+        diagramContainer.getLayoutParams().height = screenHeight;
+        diagramContainer.getLayoutParams().width = screenWidth;
 
         Bitmap bitmap = Bitmap.createBitmap(
-                screenWidth / 2, // Width
-                screenHeight / 2, // Height
+                screenWidth, // Width
+                screenHeight, // Height
                 Bitmap.Config.ARGB_8888 // Config
         );
 
         // Initialize a new Canvas instance
-        Canvas canvas = new Canvas(bitmap);
+        canvas = new Canvas(bitmap);
 
         // Draw a solid color on the canvas as background
         canvas.drawColor(Color.TRANSPARENT);
 
+
+        //Draw all
+        prepareDiagram(screenWidth, screenHeight);
+
+
+        // Display the newly created bitmap on app interface
+        diagramContainer.setImageBitmap(bitmap);
+    }
+
+    private void prepareDiagram(int screenWidth, int screenHeight) {
         // Initialize a new Paint instance to draw the line
         Paint paint = new Paint();
         // Line color
-        paint.setColor(Color.BLACK);
+        paint.setColor(Color.GRAY);
         paint.setStyle(Paint.Style.STROKE);
         // Line width in pixels
         paint.setStrokeWidth(1);
@@ -76,15 +88,14 @@ public class DiagramActivity extends AppCompatActivity {
         int offset = 30;
 
         // Draw a line on canvas at the center position
-        canvas.drawLine(
-                0 + offset, // startX
-                diagramContainer.getHeight() / 2, // startY
-                500, // stopX
-                500, // stopY
-                paint // Paint
-        );
+        canvas.drawLine(screenWidth / 2, offset, screenWidth / 2, screenHeight - offset, paint);
+        canvas.drawLine( offset, screenHeight / 2, screenWidth - offset, screenHeight / 2, paint);
 
-        // Display the newly created bitmap on app interface
-        diagramContainer.setImageBitmap(bitmap);
+        canvas.drawLine(screenWidth / 2, offset, screenWidth / 2 - offset / 2, offset * 2, paint);
+        canvas.drawLine(screenWidth / 2, offset, screenWidth / 2 + offset / 2, offset * 2, paint);
+
+        canvas.drawLine( screenWidth - offset, screenHeight / 2, screenWidth - offset * 2, screenHeight / 2 - offset / 2, paint);
+        canvas.drawLine( screenWidth - offset, screenHeight / 2, screenWidth - offset * 2, screenHeight / 2 + offset / 2, paint);
+
     }
 }
