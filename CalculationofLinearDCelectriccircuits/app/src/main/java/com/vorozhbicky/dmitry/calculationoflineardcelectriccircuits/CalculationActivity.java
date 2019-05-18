@@ -19,7 +19,6 @@ public class CalculationActivity extends AppCompatActivity {
     private static final double fUB = -120;
     private static final double fUC = 120;
     private static final int exponent = 2;
-    private int activity_calculation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,10 +42,6 @@ public class CalculationActivity extends AppCompatActivity {
         }
     }
 
-    public void setContentView(int activity_calculation) {
-        this.activity_calculation = R.layout.activity_calculation;
-    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -59,7 +54,7 @@ public class CalculationActivity extends AppCompatActivity {
     }
 
 
-    @SuppressLint({"SetTextI18n", "DefaultLocale"})
+    @SuppressLint("SetTextI18n")
     private void starCalculation(Intent intent) {
         //Присваиваем значения исходным данным и типы переменных
         double RA = Double.parseDouble(intent.getStringExtra("ra"));
