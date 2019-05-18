@@ -198,7 +198,7 @@ public class CalculationActivity extends AppCompatActivity {
                 "ZкB=" + RB + "+j*" + ZkBR + "=√(" + RB +")^2 +("+ZkBR+"^2 *e^j *arctg("+ZkBR + "/" + RB + ")="+ String.format("%.2f", ZKB) + "*e^j*" + String.format("%.2f", Math.toDegrees(fZB)) + "° Ом\n" +
                 "ZB=" + String.format("%.2f", ZKB) + "Ом - полное сопротивление фазы B, φB=" + String.format("%.2f", Math.toDegrees(fZB)) + "° - Угол сдвига фаз между током и напряжением в фазе B\n\n" +
 
-                "ZкAС=" + RC + "+j*" + ZkCR + "=√(" + RC + ")^2 +("+ZkCR + "^2 *e^j *arctg(" + ZkCR + "/" + RC + ")="+ String.format("%.2f", ZKC) + "*e^j*" + String.format("%.2f", Math.toDegrees(fZC)) + "° Ом\n" +
+                "ZкС=" + RC + "+j*" + ZkCR + "=√(" + RC + ")^2 +("+ZkCR + "^2 *e^j *arctg(" + ZkCR + "/" + RC + ")="+ String.format("%.2f", ZKC) + "*e^j*" + String.format("%.2f", Math.toDegrees(fZC)) + "° Ом\n" +
                 "ZC=" +String.format("%.2f", ZKC) + "Ом - полное сопротивление фазы C, φC=" + String.format("%.2f", Math.toDegrees(fZC)) + "° - Угол сдвига фаз между током и напряжением в фазе C\n\n" +
 
                 "4.Находим комплексы фазных токов:\n" +
@@ -217,21 +217,21 @@ public class CalculationActivity extends AppCompatActivity {
                 "IфC=" + String.format("%.2f",IKC) + "*e^j*" + String.format("%.2f",fIKC) + "° =" + String.format("%.2f",IKC) + "*cos(" + String.format("%.2f",fIKC) + "°)+" + String.format("%.2f",IKC) + "*sin(" + String.format("%.2f",fIKC) + "°)=(" + String.format("%.2f",IalgCA) + "+j*" + String.format("%.2f",IalgCR) + ")А\n\n" +
 
                 "5.Вычисляем ток в нейтральном проводе:\n" +
-                "Iн= IфА+ IфB+ IфC=" + String.format("%.2f",IalgAA) + "+j*" + String.format("%.2f",IalgAR) + "+" + IalgBA + "+j*" + String.format("%.2f",IalgBR) + "+" + String.format("%.2f",IalgCA) + "+j*" + String.format("%.2f",IalgCR) + "=" + String.format("%.2f",INA) + "+j*" + String.format("%.2f",INR) + "=" + String.format("%.2f",IN) + "*e^j*" + String.format("%.2f",Math.toDegrees(MIN)) + "° A\n" +
+                "Iн= IфА+ IфB+ IфC=" + String.format("%.2f",IalgAA) + "+j*" + String.format("%.2f",IalgAR) + "+" + String.format("%.2f",IalgBA) + "+j*" + String.format("%.2f",IalgBR) + "+" + String.format("%.2f",IalgCA) + "+j*" + String.format("%.2f",IalgCR) + "=" + String.format("%.2f",INA) + "+j*" + String.format("%.2f",INR) + "=" + String.format("%.2f",IN) + "*e^j*" + String.format("%.2f",Math.toDegrees(MIN)) + "° A\n" +
                 "Модуль Iн=" + String.format("%.2f",IN) + "A, аргумент ψN=" + String.format("%.2f",Math.toDegrees(MIN)) + "°\n\n" +
 
 
                 "6.Вычисляем мощности фаз и всей цепи:\n" +
-                "SфА=UфА*Iфа=" + Uf + "*e^j* " + fUA + "° *" + String.format("%.2f",IKA) + "*e^j*" + String.format("%.2f",MfIKA) + "°=" + String.format("%.2f",PUIA) + "*cos(" + String.format("%.2f",SfA) + "°)+j" + String.format("%.2f",PUIA) + "*sin(" + String.format("%.2f",SfA) +"°) = (" + String.format("%.2f",SFAA) + "+j*" + String.format("%.2f",SFAR) + ") В*А\n" +
-                "где SA=" + String.format("%.2f",PUIA) + " B*A, PA=" + String.format("%.2f",SFAA) + " Вт, QA=" + SFAR + "вар\n" +
+                "SфА=UфА*Iфа=" + String.format("%.2f",Uf) + "*e^j* " + fUA + "° *" + String.format("%.2f",IKA) + "*e^j*" + String.format("%.2f",MfIKA) + "°=" + String.format("%.2f",PUIA) + "*cos(" + String.format("%.2f",SfA) + "°)+j" + String.format("%.2f",PUIA) + "*sin(" + String.format("%.2f",SfA) +"°) = (" + String.format("%.2f",SFAA) + "+j*" + String.format("%.2f",SFAR) + ") В*А\n" +
+                "где SA=" + String.format("%.2f",PUIA) + " B*A, PA=" + String.format("%.2f",SFAA) + " Вт, QA=" + String.format("%.2f",SFAR) + "вар\n" +
 
-                "SфB=UфB*Iфb=" + Uf + "e^j* " + fUB + "°*" + String.format("%.2f",IKB) + "*e^j*" + String.format("%.2f",MfIKB) + "°=" + String.format("%.2f",PUIB) + "*cos(" + String.format("%.2f",SfB) + "°)+j" + String.format("%.2f",PUIB) + "*sin(" + String.format("%.2f",SfB) + "°) = (" + String.format("%.2f",SFBA) + "+j*" + String.format("%.2f",SFBR) + ") В*А\n" +
+                "SфB=UфB*Iфb=" + String.format("%.2f",Uf) + "e^j* " + fUB + "°*" + String.format("%.2f",IKB) + "*e^j*" + String.format("%.2f",MfIKB) + "°=" + String.format("%.2f",PUIB) + "*cos(" + String.format("%.2f",SfB) + "°)+j" + String.format("%.2f",PUIB) + "*sin(" + String.format("%.2f",SfB) + "°) = (" + String.format("%.2f",SFBA) + "+j*" + String.format("%.2f",SFBR) + ") В*А\n" +
                 "где SB=" + String.format("%.2f",PUIB) + "B*A, PB=" + String.format("%.2f",SFBA) + "Вт, QB=" + String.format("%.2f",SFBR) + "вар\n" +
 
-                "SфC=UфC*Iфc=" + Uf + "e^j* " + fUC + "°*" + String.format("%.2f",IKC) + "*e^j*" + String.format("%.2f",MfIKC) + "°=" + String.format("%.2f",PUIC) + "*cos(" + String.format("%.2f",SfC) + "°)+j" + String.format("%.2f",PUIC) + "*sin(" + String.format("%.2f",SfC) + "°) = (" + String.format("%.2f",SFCA) + "+j*" + String.format("%.2f",SFCR) + ") *А\n" +
+                "SфC=UфC*Iфc=" + String.format("%.2f",Uf) + "e^j* " + fUC + "°*" + String.format("%.2f",IKC) + "*e^j*" + String.format("%.2f",MfIKC) + "°=" + String.format("%.2f",PUIC) + "*cos(" + String.format("%.2f",SfC) + "°)+j" + String.format("%.2f",PUIC) + "*sin(" + String.format("%.2f",SfC) + "°) = (" + String.format("%.2f",SFCA) + "+j*" + String.format("%.2f",SFCR) + ") *А\n" +
                 "где SC=" + String.format("%.2f",PUIC) + "B*A, PC=" + String.format("%.2f",SFCA) + "Вт, QC=" + String.format("%.2f",SFCR) + "вар\n" +
 
-                "Sполн = SфА+ SфB+ SфC=" + String.format("%.2f",SFAA) + "+" + String.format("%.2f",SFBA) + "+" + String.format("%.2f",SFCA) + "+j*" + String.format("%.2f",SFAR) + "+j*" + String.format("%.2f",SFBR) + "+j*" + String.format("%.2f",SFCR) + "=" + SPOLNA + "+j*" + SPOLNR + "=(" + SPOLN + "*e^j" + fSPOLN + "°) В*А\n" +
+                "Sполн = SфА+ SфB+ SфC=" + String.format("%.2f",SFAA) + "+" + String.format("%.2f",SFBA) + "+" + String.format("%.2f",SFCA) + "+j*" + String.format("%.2f",SFAR) + "+j*" + String.format("%.2f",SFBR) + "+j*" + String.format("%.2f",SFCR) + "=" + String.format("%.2f",SPOLNA) + "+j*" + String.format("%.2f",SPOLNR) + "=(" + String.format("%.2f",SPOLN) + "*e^j" + String.format("%.2f",fSPOLN) + "°) В*А\n" +
                 "где S=" + String.format("%.2f",SPOLN) + "В*А, P=" + String.format("%.2f",SPOLNA) + "Вт, Q=" + String.format("%.2f",SPOLNR) + "Вар");
 
 
@@ -383,11 +383,11 @@ public class CalculationActivity extends AppCompatActivity {
                 "где ZAC="+String.format("%.2f",ZAC1)+"Ом ,φAC="+String.format("%.2f",Math.toDegrees(fZAC1))+"°\n\n" +
 
                 "3.Вычисляем фазные токи:\n" +
-                "IAB= UAB/ZAB=("+ul+"*e^j*"+(fUA)+"°)/("+String.format("%.2f",ZAB1)+"*e^j* "+String.format("%.2f",Math.toDegrees(fZAB1))+"°) = "+String.format("%.2f",IAB1)+ "*e^j* "+String.format("%.2f",fIAB1)+"°="+IABA1+"+j*"+IABR1+"A\n" +
+                "IAB= UAB/ZAB=("+ul+"*e^j*"+(fUA)+"°)/("+String.format("%.2f",ZAB1)+"*e^j* "+String.format("%.2f",Math.toDegrees(fZAB1))+"°) = "+String.format("%.2f",IAB1)+ "*e^j* "+String.format("%.2f",fIAB1)+"°="+String.format("%.2f",IABA1)+"+j*"+String.format("%.2f",IABR1)+"A\n" +
                 "Модуль IAB="+String.format("%.2f",IAB1)+ "A, ψАB="+String.format("%.2f",fIAB1)+ "°;\n"+
-                "IBC= UBC/ZBC=("+ul+"*e^j*"+(fUB)+"°)/("+String.format("%.2f",ZBC1)+"*e^j* "+String.format("%.2f",Math.toDegrees(fZBC1))+"° )= "+String.format("%.2f",IBC1)+ "*e^j* "+String.format("%.2f",fIBC1)+"°="+IBCA1+"+j*"+IBCR1+"A\n" +
+                "IBC= UBC/ZBC=("+ul+"*e^j*"+(fUB)+"°)/("+String.format("%.2f",ZBC1)+"*e^j* "+String.format("%.2f",Math.toDegrees(fZBC1))+"° )= "+String.format("%.2f",IBC1)+ "*e^j* "+String.format("%.2f",fIBC1)+"°="+String.format("%.2f",IBCA1)+"+j*"+String.format("%.2f",IBCR1)+"A\n" +
                 "Модуль IBC="+String.format("%.2f",IBC1)+ "A, ψАB="+String.format("%.2f",fIBC1)+ "°;\n"+
-                "IAC= UAC/ZAC=("+ul+"*e^j*"+(fUC)+"°)/("+String.format("%.2f",ZAC1)+"*e^j* "+String.format("%.2f",Math.toDegrees(fZAC1))+"°) = "+String.format("%.2f",IAC1)+ "*e^j* "+String.format("%.2f",fIAC1)+"°="+IACA1+"+j*"+IACR1+"A\n" +
+                "IAC= UAC/ZAC=("+ul+"*e^j*"+(fUC)+"°)/("+String.format("%.2f",ZAC1)+"*e^j* "+String.format("%.2f",Math.toDegrees(fZAC1))+"°) = "+String.format("%.2f",IAC1)+ "*e^j* "+String.format("%.2f",fIAC1)+"°="+String.format("%.2f",IACA1)+"+j*"+String.format("%.2f",IACR1)+"A\n" +
                 "Модуль IAC="+String.format("%.2f",IAC1)+ "A, ψАB="+String.format("%.2f",fIAC1)+ "°;\n\n"+
 
 
@@ -408,7 +408,7 @@ public class CalculationActivity extends AppCompatActivity {
                 "где SBC="+String.format("%.2f",SBC1)+"B*A PBC="+String.format("%.2f",SBCA1)+"Вт, QBC="+String.format("%.2f",SBCR1)+"вар\n" +
                 "SBC=UAC*IAC="+ul+"*e^j"+fUC+"° *"+String.format("%.2f",IAC1)+"*e^j* "+String.format("%.2f",fOIAC1)+"° ="+String.format("%.2f",SAC1)+"*e^j* "+String.format("%.2f",fSAC1)+"° = ("+String.format("%.2f",SACA1)+"+j*"+String.format("%.2f",SACR1)+"B*A\n" +
                 "где SAC="+String.format("%.2f",SAC1)+"B*A PAC="+String.format("%.2f",SACA1)+"Вт, QAC="+String.format("%.2f",SACR1)+"вар\n"+
-                "Sполн = SфАB+ SфBC+ SфAC=" + String.format("%.2f",SABA1) + "+" + String.format("%.2f",SBCA1) + "+" + String.format("%.2f",SACA1) + "+j*" + String.format("%.2f",SABR1) + "+j*" + String.format("%.2f",SBCR1) + "+j*" + String.format("%.2f",SACR1) + "=" + SPOLNA1 + "+j*" + SPOLNR1 + "=(" + SPOLN1 + "*e^j" + fSPOLN1 + "°) В*А\n" +
+                "Sполн = SфАB+ SфBC+ SфAC=" + String.format("%.2f",SABA1) + "+" + String.format("%.2f",SBCA1) + "+" + String.format("%.2f",SACA1) + "+j*" + String.format("%.2f",SABR1) + "+j*" + String.format("%.2f",SBCR1) + "+j*" + String.format("%.2f",SACR1) + "=" + String.format("%.2f",SPOLNA1) + "+j*" + String.format("%.2f",SPOLNR1) + "=(" + String.format("%.2f",SPOLN1) + "*e^j" + String.format("%.2f",fSPOLN1) + "°) В*А\n" +
                 "где S=" + String.format("%.2f",SPOLN1) + "В*А, P=" + String.format("%.2f",SPOLNA1) + "Вт, Q=" + String.format("%.2f",SPOLNR1) + "Вар");;
 
 
