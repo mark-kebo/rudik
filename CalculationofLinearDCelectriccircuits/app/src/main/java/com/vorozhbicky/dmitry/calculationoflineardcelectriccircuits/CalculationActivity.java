@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -19,6 +20,8 @@ public class CalculationActivity extends AppCompatActivity {
     private static final double fUB = -120;
     private static final double fUC = 120;
     private static final int exponent = 2;
+    private int screenWidth;
+    private int screenHeight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +43,11 @@ public class CalculationActivity extends AppCompatActivity {
         } else {
             triangleCalculation(intent);
         }
+
+        DisplayMetrics displaymetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
+        screenWidth = displaymetrics.widthPixels;
+        screenHeight = displaymetrics.heightPixels / 2;
     }
 
     @Override
