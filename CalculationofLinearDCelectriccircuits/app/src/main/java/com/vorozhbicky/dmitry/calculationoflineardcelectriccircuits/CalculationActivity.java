@@ -10,11 +10,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static java.lang.Math.cos;
 import static java.lang.Math.cosh;
 import static java.lang.Math.sin;
 
 public class CalculationActivity extends AppCompatActivity {
+    enum State {
+        star, triangle
+    }
+
     private TextView calculationTextView;
     private static final double fUA = 0;
     private static final double fUB = -120;
@@ -22,6 +29,11 @@ public class CalculationActivity extends AppCompatActivity {
     private static final int exponent = 2;
     private int screenWidth;
     private int screenHeight;
+    private State state;
+
+    //maps
+    Map<String, Double> starMap = new HashMap<String, Double>();
+    Map<String, Double> triangleMap = new HashMap<String, Double>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +50,11 @@ public class CalculationActivity extends AppCompatActivity {
         String type = intent.getStringExtra("type");
         System.out.println(type);
 
-        if (type.equals("star")) {
+        if (type.equals(State.star.toString())) {
+            state = State.star;
             starCalculation(intent);
         } else {
+            state = State.triangle;
             triangleCalculation(intent);
         }
 
@@ -137,24 +151,35 @@ public class CalculationActivity extends AppCompatActivity {
         double k=max/min;
 
         //Новые корды
-        double mUfAAA=screenWidth/2+UfAAA;
-        double mUfABA=screenWidth/2+UfABA;
-        double mUfACA=screenWidth/2+UfACA;
+        starMap.put("mUfAAA", screenWidth/2+UfAAA);
+        starMap.put("mUfABA", screenWidth/2+UfABA);
+        starMap.put("mUfACA", screenWidth/2+UfACA);
 
-        double mUfAAR=screenHeight/2-UfAAR;
-        double mUfABR=screenHeight/2-UfABR;
-        double mUfACR=screenHeight/2-UfACR;
+        starMap.put("mUfAAR", screenHeight/2-UfAAR);
+        starMap.put("mUfABR", screenHeight/2-UfABR);
+        starMap.put("mUfACR", screenHeight/2-UfACR);
 
-        double mIalgAA=screenWidth/2+k*IalgAA;
-        double mIalgBA=screenWidth/2+k*IalgBA;
-        double mIalgCA=screenWidth/2+k*IalgCA;
+        starMap.put("mIalgAA", screenWidth/2+k*IalgAA);
+        starMap.put("mIalgBA", screenWidth/2+k*IalgBA);
+        starMap.put("mIalgCA", screenWidth/2+k*IalgCA);
 
-        double mIalgAR=screenHeight/2-k*IalgAR;
-        double mIalgBR=screenHeight/2-k*IalgBR;
-        double mIalgCR=screenHeight/2-k*IalgCR;
+        starMap.put("mIalgAR", screenHeight/2-k*IalgAR);
+        starMap.put("mIalgBR", screenHeight/2-k*IalgBR);
+        starMap.put("mIalgCR", screenHeight/2-k*IalgCR);
 
-        double mINA=screenWidth/2+k*INA;
-        double mINR=screenHeight/2-k*INR;
+        starMap.put("mINA", screenWidth/2+k*INA);
+        starMap.put("mINR", screenHeight/2-k*INR);
+
+        starMap.put("Uf", Uf);
+        starMap.put("fUA", fUA);
+        starMap.put("fUB", fUB);
+        starMap.put("fUC", fUC);
+        starMap.put("IKA", IKA);
+        starMap.put("IKB", IKB);
+        starMap.put("IKC", IKC);
+        starMap.put("fIKA", fIKA);
+        starMap.put("fIKB", fIKB);
+        starMap.put("fIKC", fIKC);
 
         //Вычисляем мощности фаз и всей цепи
         //Возьмем знак угла сдвига тока фазы обратный исходному т.е будем домножать на -1
@@ -246,9 +271,6 @@ public class CalculationActivity extends AppCompatActivity {
 
     }
 
-
-
-
     @SuppressLint("SetTextI18n")
     private void triangleCalculation(Intent intent) {
 //Присваиваем значения исходным данны и типы перменных
@@ -320,29 +342,40 @@ public class CalculationActivity extends AppCompatActivity {
         double min=Math.min(Math.abs(IABA1),Math.min(Math.abs(IBCA1),Math.abs(IACA1)));
         double k=max/min;
 
-        double mUfAABA=screenWidth/2+UfAABA;
-        double mUfABCA=screenWidth/2+UfABCA;
-        double mUfAACA=screenWidth/2+UfAACA;
+        triangleMap.put("mUfAABA", screenWidth/2+UfAABA);
+        triangleMap.put("mUfABCA", screenWidth/2+UfABCA);
+        triangleMap.put("mUfAACA", screenWidth/2+UfAACA);
 
-        double mUfAABR=screenHeight/2-UfAABR;
-        double mUfABCR=screenHeight/2-UfABCR;
-        double mUfAACR=screenHeight/2-UfAACR;
+        triangleMap.put("mUfAABR", screenHeight/2-UfAABR);
+        triangleMap.put("mUfABCR", screenHeight/2-UfABCR);
+        triangleMap.put("mUfAACR", screenHeight/2-UfAACR);
 
-        double mIABA1=screenWidth/2+k*IABA1;
-        double mIBCA1=screenWidth/2+k*IBCA1;
-        double mIACA1=screenWidth/2+k*IACA1;
+        triangleMap.put("mIABA1", screenWidth/2+k*IABA1);
+        triangleMap.put("mIBCA1", screenWidth/2+k*IBCA1);
+        triangleMap.put("mIACA1", screenWidth/2+k*IACA1);
 
-        double mIABR1=screenHeight/2-k*IABR1;
-        double mIBCR1=screenHeight/2-k*IBCR1;
-        double mIACR1=screenHeight/2-k*IACR1;
+        triangleMap.put("mIABR1", screenHeight/2-k*IABR1);
+        triangleMap.put("mIBCR1", screenHeight/2-k*IBCR1);
+        triangleMap.put("mIACR1", screenHeight/2-k*IACR1);
 
-        double mIA1A=screenWidth/2+k*IA1A;
-        double mIB1A=screenWidth/2+k*IB1A;
-        double mIC1A=screenWidth/2+k*IC1A;
+        triangleMap.put("mIA1A", screenWidth/2+k*IA1A);
+        triangleMap.put("mIB1A", screenWidth/2+k*IB1A);
+        triangleMap.put("mIC1A", screenWidth/2+k*IC1A);
 
-        double mIA1R=screenHeight/2-k*IA1R;
-        double mIB1R=screenHeight/2-k*IB1R;
-        double mIC1R=screenHeight/2-k*IC1R;
+        triangleMap.put("mIA1R", screenHeight/2-k*IA1R);
+        triangleMap.put("mIB1R", screenHeight/2-k*IB1R);
+        triangleMap.put("mIC1R", screenHeight/2-k*IC1R);
+
+        triangleMap.put("ul", ul);
+        triangleMap.put("fUA", fUA);
+        triangleMap.put("fUB", fUB);
+        triangleMap.put("fUC", fUC);
+        triangleMap.put("IAB1", IAB1);
+        triangleMap.put("IBC1", IBC1);
+        triangleMap.put("IAC1", IAC1);
+        triangleMap.put("fIAB1", fIAB1);
+        triangleMap.put("fIBC1", fIBC1);
+        triangleMap.put("fIAC1", fIAC1);
 
 
 //13.Вычисляем и присваиваем обратные углы сдвига фаз тока переменным φOIAB1 φOIBC1 φOIAC1
@@ -427,6 +460,22 @@ public class CalculationActivity extends AppCompatActivity {
 
     public void nextToDiagram(View view) {
         Intent intent = new Intent(CalculationActivity.this, DiagramActivity.class);
+        intent.putExtra("type", state.toString());
+        switch (state) {
+            case star:
+                for (Map.Entry<String, Double> entry : starMap.entrySet()) {
+                    intent.putExtra(entry.getKey(), entry.getValue().toString());
+                }
+                break;
+            case triangle:
+                for (Map.Entry<String, Double> entry : triangleMap.entrySet()) {
+                    intent.putExtra(entry.getKey(), entry.getValue().toString());
+                }
+                break;
+        }
+
+        System.out.println(starMap);
+        System.out.println(triangleMap);
         startActivity(intent);
     }
 }

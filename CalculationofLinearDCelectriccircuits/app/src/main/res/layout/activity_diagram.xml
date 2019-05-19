@@ -24,15 +24,25 @@
                 android:id="@+id/descriptionsTextView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="TextView"
+                android:text="-"
+                android:textSize="18sp"
+                android:textAlignment="viewStart"
                 tools:layout_editor_absoluteX="93dp"
-                tools:layout_editor_absoluteY="581dp" />
+                tools:layout_editor_absoluteY="581dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#FFFFFF"/>
 
             <TextView
                 android:id="@+id/descriptionTwo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="-"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#FFFFFF"
+                android:paddingBottom="10dp" />
         </LinearLayout>
     </ScrollView>
 

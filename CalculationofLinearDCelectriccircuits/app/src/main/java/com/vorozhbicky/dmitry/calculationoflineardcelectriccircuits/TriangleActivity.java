@@ -64,7 +64,7 @@ public class TriangleActivity extends AppCompatActivity {
             showAlert();
         } else {
             Intent intent = new Intent(TriangleActivity.this, CalculationActivity.class);
-            intent.putExtra("type", "triangle");
+            intent.putExtra("type", CalculationActivity.State.triangle.toString());
             intent.putExtra("rab", rab.getText().toString());
             intent.putExtra("rbc", rbc.getText().toString());
             intent.putExtra("rac", rac.getText().toString());

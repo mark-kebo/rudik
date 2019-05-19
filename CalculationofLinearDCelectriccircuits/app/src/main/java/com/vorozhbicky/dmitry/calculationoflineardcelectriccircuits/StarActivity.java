@@ -65,7 +65,7 @@ public class StarActivity extends AppCompatActivity {
             showAlert();
         } else {
             Intent intent = new Intent(StarActivity.this, CalculationActivity.class);
-            intent.putExtra("type", "star");
+            intent.putExtra("type", CalculationActivity.State.star.toString());
             intent.putExtra("ra", ra.getText().toString());
             intent.putExtra("rb", rb.getText().toString());
             intent.putExtra("rc", rc.getText().toString());
