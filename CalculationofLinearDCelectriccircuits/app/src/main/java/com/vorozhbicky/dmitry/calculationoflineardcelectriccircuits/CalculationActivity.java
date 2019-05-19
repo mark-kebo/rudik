@@ -137,24 +137,24 @@ public class CalculationActivity extends AppCompatActivity {
         double k=max/min;
 
         //Новые корды
-        double mUfAAA=500+UfAAA;
-        double mUfABA=500+UfABA;
-        double mUfACA=500+UfACA;
+        double mUfAAA=screenWidth/2+UfAAA;
+        double mUfABA=screenWidth/2+UfABA;
+        double mUfACA=screenWidth/2+UfACA;
 
-        double mUfAAR=500-UfAAR;
-        double mUfABR=500-UfABR;
-        double mUfACR=500-UfACR;
+        double mUfAAR=screenHeight/2-UfAAR;
+        double mUfABR=screenHeight/2-UfABR;
+        double mUfACR=screenHeight/2-UfACR;
 
-        double mIalgAA=500+k*IalgAA;
-        double mIalgBA=500+k*IalgBA;
-        double mIalgCA=500+k*IalgCA;
+        double mIalgAA=screenWidth/2+k*IalgAA;
+        double mIalgBA=screenWidth/2+k*IalgBA;
+        double mIalgCA=screenWidth/2+k*IalgCA;
 
-        double mIalgAR=500-k*IalgAR;
-        double mIalgBR=500-k*IalgBR;
-        double mIalgCR=500-k*IalgCR;
+        double mIalgAR=screenHeight/2-k*IalgAR;
+        double mIalgBR=screenHeight/2-k*IalgBR;
+        double mIalgCR=screenHeight/2-k*IalgCR;
 
-        double mINA=500+k*INA;
-        double mINR=500-k*INR;
+        double mINA=screenWidth/2+k*INA;
+        double mINR=screenHeight/2-k*INR;
 
         //Вычисляем мощности фаз и всей цепи
         //Возьмем знак угла сдвига тока фазы обратный исходному т.е будем домножать на -1
@@ -320,29 +320,29 @@ public class CalculationActivity extends AppCompatActivity {
         double min=Math.min(Math.abs(IABA1),Math.min(Math.abs(IBCA1),Math.abs(IACA1)));
         double k=max/min;
 
-        double mUfAABA=500+UfAABA;
-        double mUfABCA=500+UfABCA;
-        double mUfAACA=500+UfAACA;
+        double mUfAABA=screenWidth/2+UfAABA;
+        double mUfABCA=screenWidth/2+UfABCA;
+        double mUfAACA=screenWidth/2+UfAACA;
 
-        double mUfAABR=500-UfAABR;
-        double mUfABCR=500-UfABCR;
-        double mUfAACR=500-UfAACR;
+        double mUfAABR=screenHeight/2-UfAABR;
+        double mUfABCR=screenHeight/2-UfABCR;
+        double mUfAACR=screenHeight/2-UfAACR;
 
-        double mIABA1=500+k*IABA1;
-        double mIBCA1=500+k*IBCA1;
-        double mIACA1=500+k*IACA1;
+        double mIABA1=screenWidth/2+k*IABA1;
+        double mIBCA1=screenWidth/2+k*IBCA1;
+        double mIACA1=screenWidth/2+k*IACA1;
 
-        double mIABR1=500-k*IABR1;
-        double mIBCR1=500-k*IBCR1;
-        double mIACR1=500-k*IACR1;
+        double mIABR1=screenHeight/2-k*IABR1;
+        double mIBCR1=screenHeight/2-k*IBCR1;
+        double mIACR1=screenHeight/2-k*IACR1;
 
-        double mIA1A=500+k*IA1A;
-        double mIB1A=500+k*IB1A;
-        double mIC1A=500+k*IC1A;
+        double mIA1A=screenWidth/2+k*IA1A;
+        double mIB1A=screenWidth/2+k*IB1A;
+        double mIC1A=screenWidth/2+k*IC1A;
 
-        double mIA1R=500-k*IA1R;
-        double mIB1R=500-k*IB1R;
-        double mIC1R=500-k*IC1R;
+        double mIA1R=screenHeight/2-k*IA1R;
+        double mIB1R=screenHeight/2-k*IB1R;
+        double mIC1R=screenHeight/2-k*IC1R;
 
 
 //13.Вычисляем и присваиваем обратные углы сдвига фаз тока переменным φOIAB1 φOIBC1 φOIAC1
