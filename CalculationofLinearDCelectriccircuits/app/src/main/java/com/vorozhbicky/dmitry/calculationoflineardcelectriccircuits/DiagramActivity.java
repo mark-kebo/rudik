@@ -221,6 +221,13 @@ public class DiagramActivity extends AppCompatActivity {
                             getResources().getColor(R.color.pink), false);
                     drawLine(screenWidth / 2, screenHeight / 2, screenWidth / 2+mIalgCA, screenHeight/2-mIalgCR,
                             getResources().getColor(R.color.darkRed), false);
+
+                    drawLine(screenWidth / 2+mIalgAA, screenHeight / 2-mIalgAR, screenWidth / 2+mIalgAA+mIalgBA, screenHeight/2-mIalgAR+mIalgBR,
+                            getResources().getColor(R.color.pink), true);
+                    drawLine(screenWidth / 2+mINA, screenHeight / 2-mINR, screenWidth / 2+mIalgAA+mIalgBA, screenHeight/2-mIalgAR+mIalgBR,
+                            getResources().getColor(R.color.darkRed), true);
+
+
                     drawLine(screenWidth / 2, screenHeight / 2, screenWidth / 2+mINA, screenHeight/2-mINR,
                             getResources().getColor(R.color.black), false);
 
@@ -278,7 +285,7 @@ public class DiagramActivity extends AppCompatActivity {
         paint.setColor(color);
         paint.setStyle(Paint.Style.STROKE);
         // Line width in pixels
-        paint.setStrokeWidth(2);
+        paint.setStrokeWidth(5);
         paint.setAntiAlias(true);
         if (isDashedLine) {
             paint.setPathEffect(new DashPathEffect(new float[] {10,20}, 0));
