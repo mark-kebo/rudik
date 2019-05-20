@@ -427,9 +427,9 @@ public class CalculationActivity extends AppCompatActivity {
                 "IAB= UAB/ZAB=("+ul+"*e^j*"+(fUA)+"°)/("+String.format("%.2f",ZAB1)+"*e^j* "+String.format("%.2f",Math.toDegrees(fZAB1))+"°) = "+String.format("%.2f",IAB1)+ "*e^j* "+String.format("%.2f",fIAB1)+"°="+String.format("%.2f",IABA1)+"+j*"+String.format("%.2f",IABR1)+"A\n" +
                 "Модуль IAB="+String.format("%.2f",IAB1)+ "A, ψАB="+String.format("%.2f",fIAB1)+ "°;\n"+
                 "IBC= UBC/ZBC=("+ul+"*e^j*"+(fUB)+"°)/("+String.format("%.2f",ZBC1)+"*e^j* "+String.format("%.2f",Math.toDegrees(fZBC1))+"° )= "+String.format("%.2f",IBC1)+ "*e^j* "+String.format("%.2f",fIBC1)+"°="+String.format("%.2f",IBCA1)+"+j*"+String.format("%.2f",IBCR1)+"A\n" +
-                "Модуль IBC="+String.format("%.2f",IBC1)+ "A, ψАB="+String.format("%.2f",fIBC1)+ "°;\n"+
+                "Модуль IBC="+String.format("%.2f",IBC1)+ "A, ψBC="+String.format("%.2f",fIBC1)+ "°;\n"+
                 "IAC= UAC/ZAC=("+ul+"*e^j*"+(fUC)+"°)/("+String.format("%.2f",ZAC1)+"*e^j* "+String.format("%.2f",Math.toDegrees(fZAC1))+"°) = "+String.format("%.2f",IAC1)+ "*e^j* "+String.format("%.2f",fIAC1)+"°="+String.format("%.2f",IACA1)+"+j*"+String.format("%.2f",IACR1)+"A\n" +
-                "Модуль IAC="+String.format("%.2f",IAC1)+ "A, ψАB="+String.format("%.2f",fIAC1)+ "°;\n\n"+
+                "Модуль IAC="+String.format("%.2f",IAC1)+ "A, ψАC="+String.format("%.2f",fIAC1)+ "°;\n\n"+
 
 
                 "4.Находим линейные токи из уравнений записанных по первому закону Кирхгофа для узлов A,B,C\n" +
