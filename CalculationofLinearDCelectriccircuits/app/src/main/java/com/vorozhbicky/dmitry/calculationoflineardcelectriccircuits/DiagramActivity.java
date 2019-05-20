@@ -133,29 +133,29 @@ public class DiagramActivity extends AppCompatActivity {
                     double fIAC1 = Double.parseDouble(extra.getString("fIAC1"));
 
 
-                    drawLine(screenWidth / 2, screenHeight / 2, mUfAABA, mUfAABR,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth/2+mUfAABA, screenHeight/2-mUfAABR,
                             getResources().getColor(R.color.blue), false);
-                    drawLine(screenWidth / 2, screenHeight / 2, mUfABCA, mUfABCR,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth/2+mUfABCA, screenHeight/2-mUfABCR,
                             getResources().getColor(R.color.lightBlue), false);
-                    drawLine(screenWidth / 2, screenHeight / 2, mUfAACA, mUfAACR,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth/2+mUfAACA, screenHeight/2-mUfAACR,
                             getResources().getColor(R.color.purple), false);
-                    drawLine(screenWidth / 2, screenHeight / 2, mIABA1, mIABR1,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth/2+mIABA1, screenHeight/2-mIABR1,
                             getResources().getColor(R.color.red), false);
-                    drawLine(screenWidth / 2, screenHeight / 2, mIBCA1, mIBCR1,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth/2+mIBCA1, screenHeight/2-mIBCR1,
                             getResources().getColor(R.color.pink), false);
-                    drawLine(screenWidth / 2, screenHeight / 2, mIACA1, mIACR1,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth/2+mIACA1, screenHeight/2-mIACR1,
                             getResources().getColor(R.color.darkRed), false);
-                    drawLine(mIA1A, mIA1R, mIABA1, mIABR1,
+                    drawLine(screenWidth/2+mIA1A, screenHeight/2-mIA1R, screenWidth/2+mIABA1, screenHeight/2-mIABR1,
                             getResources().getColor(R.color.red), true);
-                    drawLine(mIB1A, mIB1R, mIBCA1, mIBCR1,
+                    drawLine(screenWidth/2+mIB1A, screenHeight/2-mIB1R, screenWidth/2+mIBCA1, screenHeight/2-mIBCR1,
                             getResources().getColor(R.color.pink), true);
-                    drawLine(mIC1A, mIC1R, mIACA1, mIACR1,
+                    drawLine(screenWidth/2+mIC1A, screenHeight/2-mIC1R, screenWidth/2+mIACA1, screenHeight/2-mIACR1,
                             getResources().getColor(R.color.darkRed), true);
-                    drawLine(0, 0, mIA1A, mIA1R,
+                    drawLine(screenWidth/2, screenHeight/2, screenWidth/2+mIA1A, screenHeight/2-mIA1R,
                             getResources().getColor(R.color.yellow), false);
-                    drawLine(0, 0, mIB1A, mIB1R,
+                    drawLine(screenWidth/2, screenHeight/2, screenWidth/2+mIB1A, screenHeight/2-mIB1R,
                             getResources().getColor(R.color.orange), false);
-                    drawLine(0, 0, mIC1A, mIC1R,
+                    drawLine(screenWidth/2, screenHeight/2, screenWidth/2+mIC1A, screenHeight/2-mIC1R,
                             getResources().getColor(R.color.green), false);
 
                     descriptions.setText("Векторы напряжения изображеные следующими цветами:UAB-cиний, " +
@@ -197,6 +197,7 @@ public class DiagramActivity extends AppCompatActivity {
                     double mINA = Double.parseDouble(extra.getString("mINA"));
                     double mINR = Double.parseDouble(extra.getString("mINR"));
 
+
                     double Uf = Double.parseDouble(extra.getString("Uf"));
                     fUA = Double.parseDouble(extra.getString("fUA"));
                     fUB = Double.parseDouble(extra.getString("fUB"));
@@ -208,19 +209,19 @@ public class DiagramActivity extends AppCompatActivity {
                     double fIKB = Double.parseDouble(extra.getString("fIKB"));
                     double fIKC = Double.parseDouble(extra.getString("fIKC"));
 
-                    drawLine(screenWidth / 2, screenHeight / 2, mUfAAA, mUfAAR,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth/2+mUfAAA, screenHeight/2-mUfAAR,
                             getResources().getColor(R.color.blue), false);
-                    drawLine(screenWidth / 2, screenHeight / 2, mUfABA, mUfABR,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth/2+mUfABA, screenHeight/2-mUfABR,
                             getResources().getColor(R.color.lightBlue), false);
-                    drawLine(screenWidth / 2, screenHeight / 2, mUfACA, mUfACR,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth/2+mUfACA, screenHeight/2-mUfACR,
                             getResources().getColor(R.color.purple), false);
-                    drawLine(screenWidth / 2, screenHeight / 2, mIalgAA, mIalgAR,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth / 2+mIalgAA, screenHeight/2-mIalgAR,
                             getResources().getColor(R.color.red), false);
-                    drawLine(screenWidth / 2, screenHeight / 2, mIalgBA, mIalgBR,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth / 2+mIalgBA, screenHeight/2-mIalgBR,
                             getResources().getColor(R.color.pink), false);
-                    drawLine(screenWidth / 2, screenHeight / 2, mIalgCA, mIalgCR,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth / 2+mIalgCA, screenHeight/2-mIalgCR,
                             getResources().getColor(R.color.darkRed), false);
-                    drawLine(screenWidth / 2, screenHeight / 2, mINA, mINR,
+                    drawLine(screenWidth / 2, screenHeight / 2, screenWidth / 2+mINA, screenHeight/2-mINR,
                             getResources().getColor(R.color.black), false);
 
                     descriptions.setText("Векторы напряжения изображеные следующими цветами:UfA-cиний, " +

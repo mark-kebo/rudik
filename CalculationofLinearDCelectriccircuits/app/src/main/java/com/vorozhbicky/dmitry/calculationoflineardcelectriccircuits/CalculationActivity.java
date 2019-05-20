@@ -151,24 +151,24 @@ public class CalculationActivity extends AppCompatActivity {
         double k=max/min;
 
         //Новые корды
-        starMap.put("mUfAAA", screenWidth/2+UfAAA);
-        starMap.put("mUfABA", screenWidth/2+UfABA);
-        starMap.put("mUfACA", screenWidth/2+UfACA);
+        starMap.put("mUfAAA", UfAAA);
+        starMap.put("mUfABA", UfABA);
+        starMap.put("mUfACA", UfACA);
 
-        starMap.put("mUfAAR", screenHeight/2-UfAAR);
-        starMap.put("mUfABR", screenHeight/2-UfABR);
-        starMap.put("mUfACR", screenHeight/2-UfACR);
+        starMap.put("mUfAAR", UfAAR);
+        starMap.put("mUfABR", UfABR);
+        starMap.put("mUfACR", UfACR);
 
-        starMap.put("mIalgAA", screenWidth/2+k*IalgAA);
-        starMap.put("mIalgBA", screenWidth/2+k*IalgBA);
-        starMap.put("mIalgCA", screenWidth/2+k*IalgCA);
+        starMap.put("mIalgAA", 10*k*IalgAA);
+        starMap.put("mIalgBA", 10*k*IalgBA);
+        starMap.put("mIalgCA", 10*k*IalgCA);
 
-        starMap.put("mIalgAR", screenHeight/2-k*IalgAR);
-        starMap.put("mIalgBR", screenHeight/2-k*IalgBR);
-        starMap.put("mIalgCR", screenHeight/2-k*IalgCR);
+        starMap.put("mIalgAR", 10*k*IalgAR);
+        starMap.put("mIalgBR", 10*k*IalgBR);
+        starMap.put("mIalgCR", 10*k*IalgCR);
 
-        starMap.put("mINA", screenWidth/2+k*INA);
-        starMap.put("mINR", screenHeight/2-k*INR);
+        starMap.put("mINA", 10*k*INA);
+        starMap.put("mINR", 10*k*INR);
 
         starMap.put("Uf", Uf);
         starMap.put("fUA", fUA);
@@ -342,29 +342,29 @@ public class CalculationActivity extends AppCompatActivity {
         double min=Math.min(Math.abs(IABA1),Math.min(Math.abs(IBCA1),Math.abs(IACA1)));
         double k=max/min;
 
-        triangleMap.put("mUfAABA", screenWidth/2+UfAABA);
-        triangleMap.put("mUfABCA", screenWidth/2+UfABCA);
-        triangleMap.put("mUfAACA", screenWidth/2+UfAACA);
+        triangleMap.put("mUfAABA", UfAABA);
+        triangleMap.put("mUfABCA", UfABCA);
+        triangleMap.put("mUfAACA", UfAACA);
 
-        triangleMap.put("mUfAABR", screenHeight/2-UfAABR);
-        triangleMap.put("mUfABCR", screenHeight/2-UfABCR);
-        triangleMap.put("mUfAACR", screenHeight/2-UfAACR);
+        triangleMap.put("mUfAABR", UfAABR);
+        triangleMap.put("mUfABCR", UfABCR);
+        triangleMap.put("mUfAACR", UfAACR);
 
-        triangleMap.put("mIABA1", screenWidth/2+k*IABA1);
-        triangleMap.put("mIBCA1", screenWidth/2+k*IBCA1);
-        triangleMap.put("mIACA1", screenWidth/2+k*IACA1);
+        triangleMap.put("mIABA1", 5*k*IABA1);
+        triangleMap.put("mIBCA1", 5*k*IBCA1);
+        triangleMap.put("mIACA1", 5*k*IACA1);
 
-        triangleMap.put("mIABR1", screenHeight/2-k*IABR1);
-        triangleMap.put("mIBCR1", screenHeight/2-k*IBCR1);
-        triangleMap.put("mIACR1", screenHeight/2-k*IACR1);
+        triangleMap.put("mIABR1", 5*k*IABR1);
+        triangleMap.put("mIBCR1", 5*k*IBCR1);
+        triangleMap.put("mIACR1", 5*k*IACR1);
 
-        triangleMap.put("mIA1A", screenWidth/2+k*IA1A);
-        triangleMap.put("mIB1A", screenWidth/2+k*IB1A);
-        triangleMap.put("mIC1A", screenWidth/2+k*IC1A);
+        triangleMap.put("mIA1A", 5*k*IA1A);
+        triangleMap.put("mIB1A", 5*k*IB1A);
+        triangleMap.put("mIC1A", 5*k*IC1A);
 
-        triangleMap.put("mIA1R", screenHeight/2-k*IA1R);
-        triangleMap.put("mIB1R", screenHeight/2-k*IB1R);
-        triangleMap.put("mIC1R", screenHeight/2-k*IC1R);
+        triangleMap.put("mIA1R", 5*k*IA1R);
+        triangleMap.put("mIB1R", 5*k*IB1R);
+        triangleMap.put("mIC1R", 5*k*IC1R);
 
         triangleMap.put("ul", ul);
         triangleMap.put("fUA", fUA);
