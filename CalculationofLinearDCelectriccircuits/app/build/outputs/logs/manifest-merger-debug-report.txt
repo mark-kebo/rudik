@@ -1,0 +1,186 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:2:1-38:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bf736a956374da6506426a324f6e59f6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a26fe68fda3ebb51c7a2bf7df595d0e8/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/81364b76bc537b8bdb90f98c5980ff8f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7da4c852f69cc763d689eae83a97f26c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/b560925eab835a5aaeba7d4d4abe474e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8821036b66f1270148512a5041412bb9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/cfb216c0c698d81ca573b7c1689c6cc8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/1b9394a29df679d4e939459044b7d3ac/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/18e8000a8914248a48f8382dc68d7212/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/288a9a362165b4400f0222ab6f7f2aa5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/bad28ead5b72c91bf39f858b9098d4b8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/0ea65cbdca9e6ec2d823e30c50e5c2c7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/515034832ef2d6c3fa4146efd2b81701/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/17e79dbc84a4460ccf4814d9cc8aa4a4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/4f172d298999b8efac33c4d6242e1af6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6aeebab10798b94f59dcddbdafac5243/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/fb477548461049504f153c4b2bd9574f/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/b1ce9ce2ae142c340b33a2e3eeb1d7f2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1b6f4d9b46e6995ecedbab8a8f840944/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/2369f730c1cefa2232d55e4d1d84388a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/6ccaf4165daa41b9c207eff0673e7a74/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/612f14a9723f7447bb767bd7efd9afbf/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/baa9ed1c25267bb98bb3bda9a5ac6bf5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/12a64dc1f5118593f00d4ea4d0f9ce58/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a4de2f6705a541b9f2a93797a1812958/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/cccfb5a7626374a8a0d807c561b27455/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/8ccad442f6b5da169f7a026ff9ae9129/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:2:1-38:12
+	package
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:4:5-75
+		INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:2:1-38:12
+		INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:2:1-38:12
+		INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:6:5-36:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a26fe68fda3ebb51c7a2bf7df595d0e8/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a26fe68fda3ebb51c7a2bf7df595d0e8/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6aeebab10798b94f59dcddbdafac5243/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6aeebab10798b94f59dcddbdafac5243/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/fb477548461049504f153c4b2bd9574f/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/fb477548461049504f153c4b2bd9574f/AndroidManifest.xml:22:5-23:19
+	android:screenOrientation
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:11:9-45
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6aeebab10798b94f59dcddbdafac5243/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:9:9-41
+	tools:ignore
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:14:9-48
+	android:roundIcon
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:10:9-54
+	android:icon
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:8:9-43
+	android:allowBackup
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:7:9-35
+	android:theme
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:13:9-40
+activity#com.vorozhbicky.dmitry.calculationoflineardcelectriccircuits.MainActivity
+ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:15:9-23:20
+	android:screenOrientation
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:17:13-49
+	android:name
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:16:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:21:27-74
+activity#com.vorozhbicky.dmitry.calculationoflineardcelectriccircuits.StarActivity
+ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:24:9-26:52
+	android:screenOrientation
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:26:13-49
+	android:name
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:25:13-41
+activity#com.vorozhbicky.dmitry.calculationoflineardcelectriccircuits.TriangleActivity
+ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:27:9-29:52
+	android:screenOrientation
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:29:13-49
+	android:name
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:28:13-45
+activity#com.vorozhbicky.dmitry.calculationoflineardcelectriccircuits.CalculationActivity
+ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:30:9-32:52
+	android:screenOrientation
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:32:13-49
+	android:name
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:31:13-48
+activity#com.vorozhbicky.dmitry.calculationoflineardcelectriccircuits.DiagramActivity
+ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:33:9-35:52
+	android:screenOrientation
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:35:13-49
+	android:name
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml:34:13-44
+uses-sdk
+INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bf736a956374da6506426a324f6e59f6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/bf736a956374da6506426a324f6e59f6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a26fe68fda3ebb51c7a2bf7df595d0e8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/a26fe68fda3ebb51c7a2bf7df595d0e8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/81364b76bc537b8bdb90f98c5980ff8f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/81364b76bc537b8bdb90f98c5980ff8f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7da4c852f69cc763d689eae83a97f26c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/7da4c852f69cc763d689eae83a97f26c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/b560925eab835a5aaeba7d4d4abe474e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/b560925eab835a5aaeba7d4d4abe474e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8821036b66f1270148512a5041412bb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8821036b66f1270148512a5041412bb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/cfb216c0c698d81ca573b7c1689c6cc8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/cfb216c0c698d81ca573b7c1689c6cc8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/1b9394a29df679d4e939459044b7d3ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/1b9394a29df679d4e939459044b7d3ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/18e8000a8914248a48f8382dc68d7212/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/18e8000a8914248a48f8382dc68d7212/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/288a9a362165b4400f0222ab6f7f2aa5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/288a9a362165b4400f0222ab6f7f2aa5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/bad28ead5b72c91bf39f858b9098d4b8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/bad28ead5b72c91bf39f858b9098d4b8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/0ea65cbdca9e6ec2d823e30c50e5c2c7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/0ea65cbdca9e6ec2d823e30c50e5c2c7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/515034832ef2d6c3fa4146efd2b81701/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/515034832ef2d6c3fa4146efd2b81701/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/17e79dbc84a4460ccf4814d9cc8aa4a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/17e79dbc84a4460ccf4814d9cc8aa4a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/4f172d298999b8efac33c4d6242e1af6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/4f172d298999b8efac33c4d6242e1af6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6aeebab10798b94f59dcddbdafac5243/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/6aeebab10798b94f59dcddbdafac5243/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/fb477548461049504f153c4b2bd9574f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/fb477548461049504f153c4b2bd9574f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/b1ce9ce2ae142c340b33a2e3eeb1d7f2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/b1ce9ce2ae142c340b33a2e3eeb1d7f2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1b6f4d9b46e6995ecedbab8a8f840944/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1b6f4d9b46e6995ecedbab8a8f840944/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/2369f730c1cefa2232d55e4d1d84388a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/2369f730c1cefa2232d55e4d1d84388a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/6ccaf4165daa41b9c207eff0673e7a74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/6ccaf4165daa41b9c207eff0673e7a74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/612f14a9723f7447bb767bd7efd9afbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/612f14a9723f7447bb767bd7efd9afbf/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/baa9ed1c25267bb98bb3bda9a5ac6bf5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/baa9ed1c25267bb98bb3bda9a5ac6bf5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/12a64dc1f5118593f00d4ea4d0f9ce58/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/12a64dc1f5118593f00d4ea4d0f9ce58/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a4de2f6705a541b9f2a93797a1812958/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a4de2f6705a541b9f2a93797a1812958/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/cccfb5a7626374a8a0d807c561b27455/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/cccfb5a7626374a8a0d807c561b27455/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/8ccad442f6b5da169f7a026ff9ae9129/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/dmitryvorozhbicki/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/8ccad442f6b5da169f7a026ff9ae9129/AndroidManifest.xml:20:5-44
+INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dmitryvorozhbicki/rudik/CalculationofLinearDCelectriccircuits/app/src/main/AndroidManifest.xml
